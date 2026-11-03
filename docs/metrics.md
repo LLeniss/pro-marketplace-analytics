@@ -66,3 +66,11 @@
 - **Calculation:** Days from `signup_date` to the Pro's earliest completed job.
 - **Caveat (survivorship bias):** The average and median only include Pros who completed a job. Always read them next to `pct_with_first_job`.
 - **Caveat:** No observation cutoff is applied (unlike the weekly retention model). Markets have 5 to 6 Pros, so values are illustrative only.
+
+## Pro supply funnel by market
+
+- **Question:** Where do Pros drop off between signup, onboarding, first assignment and first completed job?
+- **Grain:** One row per market.
+- **Stages:** signed up, onboarded (`onboarding_completed`), assigned at least one job, completed at least one job.
+- **Caveat:** Stages are not strictly sequential. A Pro can be assigned a job without having completed onboarding.
+- **Caveat:** Markets have 5 to 6 Pros, so values are illustrative only.

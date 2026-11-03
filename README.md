@@ -54,6 +54,7 @@ dbt tests check that:
 - This is a **hypothesis** to test, not a conclusion: n = 2.
 - `avg_days_to_assignment` is 0 everywhere because the synthetic data assigns jobs on the creation day.
 - Dallas also has the lowest share of Pros with a first completed job (2 of 5). Averages exclude Pros with no job, so read them next to the share.
+- Dallas assigned jobs to all 5 Pros although only 3 had completed onboarding, and only 2 of the 5 completed a job. Hypothesis to test with an experiment, not a conclusion.
 
 ## Limitations
 
