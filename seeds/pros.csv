@@ -1,0 +1,17 @@
+pro_id,signup_date,market,acquisition_channel,onboarding_completed,first_completed_job_date
+P001,2025-01-01,Austin,referral,true,2025-01-05
+P002,2025-01-02,Austin,paid_search,true,2025-01-20
+P003,2025-01-03,Dallas,organic,true,2025-01-10
+P004,2025-01-04,Dallas,referral,false,
+P005,2025-01-05,Austin,paid_search,true,2025-01-12
+P006,2025-01-06,Houston,organic,true,
+P007,2025-01-07,Houston,referral,true,2025-01-09
+P008,2025-01-08,Dallas,paid_search,false,
+P009,2025-01-09,Austin,organic,true,2025-01-25
+P010,2025-01-10,Houston,paid_search,true,2025-01-18
+P011,2025-01-11,Dallas,organic,true,2025-01-14
+P012,2025-01-12,Austin,referral,false,
+P013,2025-01-13,Houston,organic,true,2025-01-17
+P014,2025-01-14,Dallas,referral,true,
+P015,2025-01-15,Austin,paid_search,true,2025-01-19
+P016,2025-01-16,Houston,referral,true,2025-01-22

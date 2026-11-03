@@ -1,0 +1,22 @@
+name: pro_marketplace_analytics
+version: "1.0.0"
+config-version: 2
+
+profile: pro_marketplace_analytics
+
+model-paths: ["models"]
+analysis-paths: ["analyses"]
+seed-paths: ["seeds"]
+test-paths: ["tests"]
+clean-targets:
+  - "target"
+  - "dbt_packages"
+
+models:
+  pro_marketplace_analytics:
+    staging:
+      +materialized: view
+    intermediate:
+      +materialized: view
+    marts:
+      +materialized: table

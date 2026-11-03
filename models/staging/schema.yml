@@ -1,0 +1,30 @@
+version: 2
+
+models:
+  - name: stg_pros
+    description: "One row per Pro (synthetic data)."
+    columns:
+      - name: pro_id
+        description: "Unique Pro identifier."
+        data_tests:
+          - unique
+          - not_null
+      - name: market
+        data_tests:
+          - accepted_values:
+              arguments:
+                values: ["Austin", "Dallas", "Houston"]
+
+  - name: stg_jobs
+    description: "One row per job (synthetic data)."
+    columns:
+      - name: job_id
+        description: "Unique job identifier."
+        data_tests:
+          - unique
+          - not_null
+      - name: status
+        data_tests:
+          - accepted_values:
+              arguments:
+                values: ["completed", "cancelled", "assigned", "unassigned"]

@@ -1,0 +1,7 @@
+pro_marketplace_analytics:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: data/marketplace.duckdb
+      threads: 1
