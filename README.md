@@ -42,13 +42,18 @@ dbt test --profiles-dir .
 
 ## Data quality
 
-dbt tests check that `pro_id` and `job_id` are unique and not null, and that `market` and `status` only contain expected values.
+dbt tests check that:
+
+- `pro_id` and `job_id` are unique and not null
+- `market` and `status` only contain expected values
+- Weekly retention: cohort size is constant within each cohort, rates stay between 0 and 100, and cohort sizes add up to the Pros registered before the cutoff date
 
 ## Findings (illustrative only)
 
 - Dallas shows the highest cancellation rate (2 of 7 jobs). Both cancelled jobs were assigned to Pros who had not completed onboarding.
 - This is a **hypothesis** to test, not a conclusion: n = 2.
 - `avg_days_to_assignment` is 0 everywhere because the synthetic data assigns jobs on the creation day.
+- Dallas also has the lowest share of Pros with a first completed job (2 of 5). Averages exclude Pros with no job, so read them next to the share.
 
 ## Limitations
 
@@ -58,6 +63,5 @@ dbt tests check that `pro_id` and `job_id` are unique and not null, and that `ma
 
 ## Next steps
 
-- Add a Pro retention cohort model
 - Add an onboarding A/B test analysis (power, SRM, significance)
 - Add a BI layer (e.g., Lightdash) on top of the marts
