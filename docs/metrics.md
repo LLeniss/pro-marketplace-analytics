@@ -49,3 +49,12 @@
 - `pros.csv`: one row per Pro (`pro_id`).
 - `jobs.csv`: one row per job (`job_id`).
 - Source files: synthetic CSVs in the `seeds/` folder.
+
+## Weekly Pro activity by signup cohort
+
+- **Question:** What share of each signup cohort completed at least one job in each calendar week after signup?
+- **Cohort:** Pros grouped by the Monday of their signup week.
+- **Numerator:** Distinct Pros in the cohort with at least one completed job in that week.
+- **Denominator:** All Pros in the cohort, including those who never completed a job (fixed per cohort).
+- **Observation cutoff:** 2025-01-29 (practice assumption). Incomplete calendar weeks are excluded.
+- **Important caveats:** Week 0 is the calendar week of signup, not the Pro's first 7 days. A Pro can first appear in a later week. Cohorts are tiny (4 to 7 Pros), so the rates are illustrative only.
