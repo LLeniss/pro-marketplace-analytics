@@ -58,3 +58,11 @@
 - **Denominator:** All Pros in the cohort, including those who never completed a job (fixed per cohort).
 - **Observation cutoff:** 2025-01-29 (practice assumption). Incomplete calendar weeks are excluded.
 - **Important caveats:** Week 0 is the calendar week of signup, not the Pro's first 7 days. A Pro can first appear in a later week. Cohorts are tiny (4 to 7 Pros), so the rates are illustrative only.
+
+## Time to first completed job
+
+- **Question:** How long does it take a new Pro to complete a first job, by market?
+- **Grain:** One row per market.
+- **Calculation:** Days from `signup_date` to the Pro's earliest completed job.
+- **Caveat (survivorship bias):** The average and median only include Pros who completed a job. Always read them next to `pct_with_first_job`.
+- **Caveat:** No observation cutoff is applied (unlike the weekly retention model). Markets have 5 to 6 Pros, so values are illustrative only.
